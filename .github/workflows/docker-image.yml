@@ -28,7 +28,9 @@ jobs:
     - name: Build Docker Image
       run: |
         docker build -t hardrack/docker-graphql-udemy:0.0.2 .
+        docker build -t hardrack/docker-graphql-udemy:latest .
         
     - name: Push Docker Image
       run: |
         docker push hardrack/docker-graphql-udemy:0.0.2
+        docker push hardrack/docker-graphql-udemy:latest
